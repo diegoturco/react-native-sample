@@ -4,6 +4,7 @@ import {extendTheme, NativeBaseProvider} from 'native-base';
 import {Button, View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
+import FlatListBasics from './FlatListBasics';
 
 const newColorTheme = {
   brand: {
@@ -22,6 +23,7 @@ function HomeScreen({navigation}) {
         title="Go to Profile"
         onPress={() => navigation.navigate('Profile')}
       />
+      <FlatListBasics />
     </View>
   );
 }
